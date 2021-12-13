@@ -69,28 +69,27 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ANIE_IMG = "https://telegra.ph/file/7944090b9aca51ef8f562.jpg"
+ANIE_IMG = "https://te.legra.ph/file/074ef8d210745e3380baf.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **Anie** `your group super bot`
+`Heya` 🤗 `I am` **EMLI** `your group super bot`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help_back"),
+            text="❔𝐇𝐞𝐥𝐩  ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ",url="https://github.com/Anieteam/AnieRobot"),
-        InlineKeyboardButton(
+        InlineKeyboardButton(text="🔥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",url="http://t.me/OMG_info"
             text="Anie Userbot 🎶", url="https://github.com/Anieteam/Aniebots"
         ),
     ],
     [
-        InlineKeyboardButton(text="📜 Aʙᴏᴜᴛ", callback_data="anie_"),
+        InlineKeyboardButton(text="📜 𝐀𝐛𝐨𝐮𝐭", callback_data="anie_"),
         InlineKeyboardButton(
-            text="Bᴀꜱɪᴄ Hᴇʟᴘ 👮", callback_data="anie_basichelp"
+            text="BOT help 👮", callback_data="anie_basichelp"
         ),
     ],
     [
@@ -106,7 +105,7 @@ HELP_STRINGS = """
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- @AnieBots's 💕"""
+ @OMG_info 💕"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -353,7 +352,7 @@ def innexia_about_callback(update, context):
     query = update.callback_query
     if query.data == "anie_":
         query.message.edit_text(
-            text=""" Anie - A bot to manage your groups with additional features!
+            text=""" EMLI - A bot to manage your groups with additional features!
             \nHere's the basic help regarding use of Anie.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
